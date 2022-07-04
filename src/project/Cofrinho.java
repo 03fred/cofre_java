@@ -6,7 +6,6 @@ import java.util.List;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
-import project.model.Dolar;
 import project.model.Moeda;
 
 public class Cofrinho {
@@ -26,7 +25,6 @@ public class Cofrinho {
 				break;
 			}
 		}
-
 	}
 
 	public void listagemMoedas() {
