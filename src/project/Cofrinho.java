@@ -20,7 +20,13 @@ public class Cofrinho {
 
 	public void remover(Moeda moeda, String valor) {
 		moeda.valor = Double.parseDouble(valor);
-		listaMoedas.removeIf(object -> object.valor == moeda.valor && moeda.getClass() == object.getClass());
+		for (Moeda m : listaMoedas) {
+			if (m.valor == moeda.valor && moeda.getClass() == m.getClass()) {
+				listaMoedas.remove(m);
+				break;
+			}
+		}
+
 	}
 
 	public void listagemMoedas() {
